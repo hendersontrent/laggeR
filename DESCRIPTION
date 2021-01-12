@@ -1,6 +1,6 @@
 Package: laggeR
 Type: Package
-Title: Visualisation of lagged time series and autoregression
+Title: Visualisation of lagged time series and autoregression in R
 Version: 0.1
 Authors@R: c(
   person("Trent", "Henderson", email = "trent.henderson1@outlook.com", role = c("cre", "aut"))
@@ -8,7 +8,7 @@ Authors@R: c(
 Maintainer: Trent Henderson <trent.henderson1@outlook.com>
 Description: Automated data visualisation of time series as predicted by
              lagged versions of the same time series (autoregression) or lagged
-             versions of another time series (such as Granger Causlity).
+             versions of another time series (such as Granger causlity).
 BugReports: https://github.com/hendersontrent/laggeR/issues
 License: MIT
 Encoding: UTF-8
