@@ -2,24 +2,28 @@
 % Please edit documentation in R/plot_ar.R
 \name{plot_ar}
 \alias{plot_ar}
-\title{Function to automate the production of a set of 
-time series graphs that visualise the autoregressive 
-structure of an input time series}
+\title{Function to automate the production of a set of
+time series graphs that visualises the autoregressive
+structure of an input time series or produces linear regression
+outputs for each specified time lag}
 \usage{
-plot_ar(timeseries, lags = NULL)
+plot_ar(timeseries, lags = NULL, plot = TRUE)
 }
 \arguments{
 \item{timeseries}{the input time series as a vector of numerical values}
 
 \item{lags}{a vector of numeric values that represent the time lags the user wants to visualise}
+
+\item{plot}{a Boolean of whether to plot the result or return a dataframe}
 }
 \value{
-an object of class `ggplot` that represents a matrix of scatterplots
+an object of class `ggplot` that represents a matrix of scatterplots if plot = TRUE, otherwise returns a dataframe of linear model results
 }
 \description{
-Function to automate the production of a set of 
-time series graphs that visualise the autoregressive 
-structure of an input time series
+Function to automate the production of a set of
+time series graphs that visualises the autoregressive
+structure of an input time series or produces linear regression
+outputs for each specified time lag
 }
 \author{
 Trent Henderson
