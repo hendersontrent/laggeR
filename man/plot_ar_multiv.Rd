@@ -2,11 +2,12 @@
 % Please edit documentation in R/plot_ar_multiv.R
 \name{plot_ar_multiv}
 \alias{plot_ar_multiv}
-\title{Function to automate the production of a set of 
-time series graphs that visualise the multivariate autoregressive 
-structure of two input time series}
+\title{Function to automate the production of a set of
+time series graphs that visualises the multivariate autoregressive
+structure of two input time series or produces linear regression
+outputs for each specified time lag}
 \usage{
-plot_ar_multiv(timeseriesx, timeseriesy, lags = NULL)
+plot_ar_multiv(timeseriesx, timeseriesy, lags = NULL, plot = TRUE)
 }
 \arguments{
 \item{timeseriesx}{an input time series as a vector of numerical values}
@@ -14,14 +15,17 @@ plot_ar_multiv(timeseriesx, timeseriesy, lags = NULL)
 \item{timeseriesy}{an input time series as a vector of numerical values}
 
 \item{lags}{a vector of numeric values that represent the time lags the user wants to visualise}
+
+\item{plot}{a Boolean of whether to plot the result or return a dataframe}
 }
 \value{
-an object of class `ggplot` that represents a matrix of scatterplots
+an object of class `ggplot` that represents a matrix of scatterplots if plot = TRUE, otherwise returns a dataframe of linear model results
 }
 \description{
-Function to automate the production of a set of 
-time series graphs that visualise the multivariate autoregressive 
-structure of two input time series
+Function to automate the production of a set of
+time series graphs that visualises the multivariate autoregressive
+structure of two input time series or produces linear regression
+outputs for each specified time lag
 }
 \author{
 Trent Henderson
