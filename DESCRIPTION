@@ -1,7 +1,7 @@
 Package: laggeR
 Type: Package
 Title: Visualisation of lagged time series and autoregression in R
-Version: 0.1
+Version: 0.1.2
 Authors@R: c(
   person("Trent", "Henderson", email = "trent.henderson1@outlook.com", role = c("cre", "aut"))
   )
@@ -21,5 +21,6 @@ Imports:
     ggplot2,
     tidyr,
     scales,
-    data.table
+    data.table,
+    broom
 RoxygenNote: 7.1.1
